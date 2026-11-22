@@ -2,181 +2,191 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soni Electronic | Electronics & Repair</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soni Electronic</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
-        body {
-            background: #f4f7fb;
-            color: #1b2430;
-        }
+body {
+    background: #f5f7fb;
+    color: #172033;
+}
 
-        header {
-            background: #0b1830;
-            color: white;
-            padding: 18px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
+header {
+    background: #0b1428;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
 
-        .logo {
-            font-size: 26px;
-            font-weight: bold;
-        }
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
 
-        .logo span {
-            color: #00c2ff;
-        }
+.logo span {
+    color: #38bdf8;
+}
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 20px;
-        }
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
 
-        nav a:hover {
-            color: #00c2ff;
-        }
+nav a:hover {
+    color: #38bdf8;
+}
 
-        .hero {
-            background: linear-gradient(120deg, #0b1830, #164e8a);
-            color: white;
-            padding: 85px 8%;
-            text-align: center;
-        }
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(135deg, #0b1428, #075985);
+}
 
-        .hero h1 {
-            font-size: 42px;
-            margin-bottom: 15px;
-        }
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
 
-        .hero p {
-            font-size: 18px;
-            margin-bottom: 25px;
-        }
+.hero p {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
 
-        .btn {
-            display: inline-block;
-            padding: 13px 25px;
-            background: #00c2ff;
-            color: #081629;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-        }
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 25px;
+    background: #38bdf8;
+    color: #071426;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
 
-        section {
-            padding: 55px 8%;
-        }
+.btn:hover {
+    background: #7dd3fc;
+}
 
-        .heading {
-            text-align: center;
-            font-size: 30px;
-            margin-bottom: 35px;
-        }
+section {
+    padding: 65px 7%;
+}
 
-        .products {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 22px;
-        }
+.heading {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
 
-        .card {
-            background: white;
-            padding: 25px;
-            text-align: center;
-            border-radius: 15px;
-            box-shadow: 0 5px 18px rgba(0,0,0,0.08);
-            transition: 0.3s;
-        }
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
 
-        .card:hover {
-            transform: translateY(-5px);
-        }
+.card {
+    background: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #00000010;
+    transition: 0.3s;
+}
 
-        .card .emoji {
-            font-size: 55px;
-            margin-bottom: 15px;
-        }
+.card:hover {
+    transform: translateY(-6px);
+}
 
-        .card h3 {
-            margin-bottom: 10px;
-        }
+.product-icon {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
 
-        .services {
-            background: #e8f1fa;
-        }
+.card h3 {
+    margin-bottom: 12px;
+}
 
-        .service-box {
-            max-width: 700px;
-            margin: auto;
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            text-align: center;
-        }
+.card p {
+    color: #64748b;
+    line-height: 1.6;
+}
 
-        .service-box p {
-            margin: 12px 0;
-            font-size: 17px;
-        }
+.services {
+    background: #e8f1fb;
+}
 
-        .contact {
-            text-align: center;
-        }
+.service-list {
+    max-width: 750px;
+    margin: auto;
+    display: grid;
+    gap: 15px;
+}
 
-        .contact p {
-            margin: 12px 0;
-            font-size: 17px;
-        }
+.service {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+}
 
-        footer {
-            background: #0b1830;
-            color: white;
-            padding: 25px;
-            text-align: center;
-        }
+.contact {
+    text-align: center;
+}
 
-        .whatsapp {
-            position: fixed;
-            right: 20px;
-            bottom: 20px;
-            background: #25D366;
-            color: white;
-            text-decoration: none;
-            padding: 15px 18px;
-            border-radius: 50px;
-            font-weight: bold;
-            box-shadow: 0 4px 15px #0003;
-        }
+.contact p {
+    margin: 15px;
+    font-size: 17px;
+}
 
-        @media(max-width: 600px) {
-            header {
-                justify-content: center;
-                text-align: center;
-            }
+footer {
+    background: #0b1428;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
 
-            nav a {
-                margin: 8px;
-                display: inline-block;
-            }
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px #0003;
+}
 
-            .hero h1 {
-                font-size: 30px;
-            }
-        }
-    </style>
+@media(max-width: 600px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
+</style>
 </head>
 
 <body>
@@ -192,13 +202,13 @@
     </nav>
 </header>
 
-<section class="hero" id="home">
-    <h1>Welcome to Soni Electronic</h1>
-    <p>Electronics, Home Appliances & Repair Services</p>
-    <p>Quality • Trust • Best Service</p>
-    <br>
+<div class="hero" id="home">
+    <h1>Soni Electronic</h1>
+    <p>Your Trusted Electronics Store</p>
+    <p>Electronics • Home Appliances • Repair Services</p>
+
     <a href="#products" class="btn">Explore Products</a>
-</section>
+</div>
 
 <section id="products">
     <h2 class="heading">Our Products</h2>
@@ -206,68 +216,61 @@
     <div class="products">
 
         <div class="card">
-            <div class="emoji">📺</div>
-            <h3>LED TV</h3>
-            <p>LED televisions for your home entertainment.</p>
+            <div class="product-icon">📺</div>
+            <h3>LED Television</h3>
+            <p>TVs for your home entertainment.</p>
         </div>
 
         <div class="card">
-            <div class="emoji">🔊</div>
+            <div class="product-icon">🔊</div>
             <h3>Home Theatre</h3>
-            <p>Enjoy powerful sound and entertainment.</p>
+            <p>Enjoy music with powerful sound.</p>
         </div>
 
         <div class="card">
-            <div class="emoji">💡</div>
-            <h3>Electronic Items</h3>
-            <p>Various electronics and accessories.</p>
+            <div class="product-icon">💡</div>
+            <h3>Electronics</h3>
+            <p>Electronic products for everyday needs.</p>
         </div>
 
         <div class="card">
-            <div class="emoji">🔌</div>
+            <div class="product-icon">🔌</div>
             <h3>Accessories</h3>
-            <p>Useful electronic accessories for everyday needs.</p>
+            <p>Useful electronics and accessories.</p>
         </div>
 
     </div>
 </section>
 
 <section class="services" id="services">
-    <h2 class="heading">Our Services</h2>
+    <h2 class="heading">Repair Services</h2>
 
-    <div class="service-box">
-        <h2>🔧 Electronic Repair</h2>
-        <p>✔ LED & TV Repair</p>
-        <p>✔ Home Theatre Repair</p>
-        <p>✔ Electronic Item Repair</p>
-        <p>✔ Friendly Customer Service</p>
+    <div class="service-list">
+        <div class="service">🔧 LED & TV Repair</div>
+        <div class="service">🔧 Home Theatre Repair</div>
+        <div class="service">🔧 Electronic Item Repair</div>
     </div>
 </section>
 
 <section class="contact" id="contact">
     <h2 class="heading">Contact Us</h2>
 
-    <p><b>Shop:</b> Soni Electronic</p>
+    <p><b>Shop Name:</b> Soni Electronic</p>
     <p><b>Address:</b> Majhagwan Road, Khittola, Basti Sihora</p>
-    <p><b>Phone:</b> Add your mobile number here</p>
 
-    <br>
-    <a href="https://maps.google.com/?q=Soni+Electronic+Khittola+Sihora"
-       class="btn" target="_blank">
-       📍 Find Our Shop
+    <a class="btn" href="https://maps.google.com/?q=Khittola+Sihora">
+        📍 Find Our Shop
     </a>
 </section>
 
 <footer>
-    <p>© 2026 Soni Electronic | All Rights Reserved</p>
-    <p>Made with ❤️ for our customers</p>
+    <p>© 2026 Soni Electronic</p>
+    <p>Quality • Trust • Service</p>
 </footer>
 
-<!-- WhatsApp button: replace number below with your number -->
-<a class="whatsapp"
-   href="https://wa.me/91YOURNUMBER"
-   target="_blank">
-   WhatsApp
+<!-- Replace 91XXXXXXXXXX with your WhatsApp number -->
+<a class="whatsapp" href="https://wa.me/919826922603">
+    WhatsApp
 </a>
 
 </body>
